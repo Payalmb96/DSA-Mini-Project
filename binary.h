@@ -1,2 +1,1 @@
-void BinaryEncoder(char c);
-char* BinaryDecoder(char str[]);
+int* BinaryEncoder(char str[]);

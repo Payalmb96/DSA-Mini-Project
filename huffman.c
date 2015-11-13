@@ -1,3 +1,20 @@
+/*	Huffman Encoder: Encodes the input string to Huffman Encoding
+ *	Copyright (C) 2015  Payal Bhujwala
+ *
+ *	huffman.c is free software: you can redistribute it and/or modify
+ *	it under the terms of the GNU General Public License as published by
+ *	the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
+ *
+ *	huffman.c is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU General Public License for more details.
+ *
+ *	You should have received a copy of the GNU General Public License
+ *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *      Contact payalmb96@gmail.com for any queries related to this software
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include "huffman.h" 
@@ -141,17 +158,8 @@ int* freqarray(char str[]){
 	p = freq;
 	return p;
 }
-/*void HuffEncoder(char str[]){
+void HuffEncoder(char str[]){
 	int *freq = freqarray(str);
 	int size = sizeof(str)/sizeof(str[0]);
 	HuffmanCodes(str, freq, size);
-}*/
-// Driver program to test above functions
-int main()
-{
-    char arr[] = "payal";
-    int *freq = freqarray(arr);
-    int size = sizeof(arr)/sizeof(arr[0]);
-    HuffmanCodes(arr, freq, size);
-    return 0;
-}*/
+}

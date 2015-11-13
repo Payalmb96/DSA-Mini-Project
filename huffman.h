@@ -1,3 +1,20 @@
+/*	Huffman Encoder: Encodes the input string to Huffman Encoding
+ *	Copyright (C) 2015  Payal Bhujwala
+ *
+ *	huffman.h is free software: you can redistribute it and/or modify
+ *	it under the terms of the GNU General Public License as published by
+ *	the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
+ *
+ *	huffman.h is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU General Public License for more details.
+ *
+ *	You should have received a copy of the GNU General Public License
+ *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *      Contact payalmb96@gmail.com for any queries related to this software
+ */
 // A Huffman tree node
 typedef struct Node{
     char data;  
