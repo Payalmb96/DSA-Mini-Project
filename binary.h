@@ -1,1 +1,1 @@
-int* BinaryEncoder(char str[]);
+void BinaryEncoder(char str[]);

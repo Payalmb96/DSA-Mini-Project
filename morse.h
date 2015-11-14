@@ -1,1 +1,1 @@
-char* MorseCodeEncoder(char str[]);
+void MorseCodeEncoder(char str[]);

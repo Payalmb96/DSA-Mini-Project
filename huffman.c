@@ -129,7 +129,6 @@ void printCodes(Node* root, int arr[], int top){
         printCodes(root->right, arr, top + 1);
     }
     if (isLeaf(root)){
-        //printf("%c: ", root->data);
         printArr(arr, top);
     }
 }

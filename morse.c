@@ -18,11 +18,16 @@
 #include<stdio.h>
 #include<ctype.h>
 #include "morse.h"
-char* MorseCodeEncoder(char str[]){
+
+void MorseCodeEncoder(char str[]){
+
 	int i, j = 0;
 	char mstr[512];
+
 	for(i = 0; str[i] != '\0'; ++i){
+
 		switch(toupper(str[i])){
+
 			case 'A':
 				  mstr[j++]='.';
 				  mstr[j++]='-';
@@ -336,11 +341,17 @@ char* MorseCodeEncoder(char str[]){
 				  mstr[j] = ' ';
 				  break;
 		}
-		mstr[++j] = '\0';		
+
+		mstr[j++] = '\0';		
+
 	}
-	return mstr;
+	
+	printf("\nEncoded String:");
+	for(i = 0; i < j; i++)
+		printf("%c", mstr[i]);
+		
+	return;
+	
 }
-char* MorseCodeDecoder(char str[]){
-	return NULL;
-}
+
 

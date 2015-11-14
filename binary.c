@@ -16,25 +16,38 @@
  *      Contact payalmb96@gmail.com for any queries related to this software
  */
 #include<stdio.h>
-int* BinaryEncoder(char str[]){
+#include "binary.h"
+void BinaryEncoder(char str[]){
+	
 	int i, n, q, rem, k = 7, j = 0;
 	int A[128], B[8];
-	scanf("%s", str);
+
 	for(i = 0; str[i] != '\0'; i++){
+
 		n = (int)str[i];
 		while(n != 0){
+
 			q = n / 2;
 			rem = n % 2;
 			B[k--] = rem;
 			n = q;
+
 		}
+
 		if(k != -1)
 			while(k != -1)
 				B[k--] = 0; 
+
 		k = 7;
 		int l; 
 		for(l = 0; l < 8; l++)
 			A[j++] = B[l];
+
 	}
-	return A;
+	
+	printf("\nEncoded String:");
+	for(i = 0; i < j; i++)
+		printf("%d", A[i]);
+	
+	return;
 }
